@@ -11,7 +11,17 @@ import SwiftUI
 struct AppleServiceNowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                BasicView()
+                    .badge(2)
+                    .tabItem {
+                        Label("Basic",systemImage: "command")
+                    }
+                DeveloperView()
+                    .tabItem {
+                        Label("Developer",systemImage: "xserve")
+                    }
+            }
         }
     }
 }

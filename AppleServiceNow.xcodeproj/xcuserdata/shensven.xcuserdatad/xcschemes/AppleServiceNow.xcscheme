@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "06DF266B28AF8BE5006AD6F0"
+               BuildableName = "AppleServiceNow.app"
+               BlueprintName = "AppleServiceNow"
+               ReferencedContainer = "container:AppleServiceNow.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "06DF266B28AF8BE5006AD6F0"
+            BuildableName = "AppleServiceNow.app"
+            BlueprintName = "AppleServiceNow"
+            ReferencedContainer = "container:AppleServiceNow.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
