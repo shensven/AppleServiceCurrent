@@ -14,6 +14,7 @@
 		066A52CF28B7686F00F4C661 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 066A52CE28B7686F00F4C661 /* README.md */; };
 		066A52D128B76AAE00F4C661 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 066A52D028B76AAE00F4C661 /* .gitignore */; };
 		066A52D328B76B5100F4C661 /* .github in Resources */ = {isa = PBXBuildFile; fileRef = 066A52D228B76B5100F4C661 /* .github */; };
+		066A52D628B77C0E00F4C661 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 066A52D528B77C0E00F4C661 /* .swift-version */; };
 		06DF267028AF8BE5006AD6F0 /* AppleServiceNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF266F28AF8BE5006AD6F0 /* AppleServiceNowApp.swift */; };
 		06DF267428AF8BE8006AD6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DF267328AF8BE8006AD6F0 /* Assets.xcassets */; };
 		06DF267728AF8BE8006AD6F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DF267628AF8BE8006AD6F0 /* Preview Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		066A52CE28B7686F00F4C661 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		066A52D028B76AAE00F4C661 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		066A52D228B76B5100F4C661 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
+		066A52D528B77C0E00F4C661 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		06DF266C28AF8BE5006AD6F0 /* AppleServiceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleServiceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DF266F28AF8BE5006AD6F0 /* AppleServiceNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleServiceNowApp.swift; sourceTree = "<group>"; };
 		06DF267328AF8BE8006AD6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			children = (
 				066A52D228B76B5100F4C661 /* .github */,
 				066A52D028B76AAE00F4C661 /* .gitignore */,
+				066A52D528B77C0E00F4C661 /* .swift-version */,
 				066A52CC28B7686700F4C661 /* LICENSE */,
 				066A52CE28B7686F00F4C661 /* README.md */,
 			);
@@ -100,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06DF267A28AF8BE8006AD6F0 /* Build configuration list for PBXNativeTarget "AppleServiceNow" */;
 			buildPhases = (
+				066A52D428B771DD00F4C661 /* Run SwiftFormat */,
 				066A52C928B7640B00F4C661 /* Run SwiftLint */,
 				06DF266828AF8BE5006AD6F0 /* Sources */,
 				06DF266928AF8BE5006AD6F0 /* Frameworks */,
@@ -158,6 +162,7 @@
 				06DF267728AF8BE8006AD6F0 /* Preview Assets.xcassets in Resources */,
 				066A52CF28B7686F00F4C661 /* README.md in Resources */,
 				06DF267428AF8BE8006AD6F0 /* Assets.xcassets in Resources */,
+				066A52D628B77C0E00F4C661 /* .swift-version in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +186,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		066A52D428B771DD00F4C661 /* Run SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

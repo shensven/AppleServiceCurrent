@@ -10,5 +10,6 @@ Not released yet
 
 ### PREREQUISITES
 
+- [SwiftFormat](https://github.com/nicklockwood/SwiftFormat)
 - [SwiftLint](https://github.com/realm/SwiftLint)
 
