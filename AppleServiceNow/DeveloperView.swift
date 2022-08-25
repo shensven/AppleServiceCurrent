@@ -9,23 +9,23 @@ import SwiftUI
 
 struct DeveloperView: View {
     @State var showSettingsView = false
-    
+
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: SettingsView(), isActive: $showSettingsView){
+                NavigationLink(destination: SettingsView(), isActive: $showSettingsView) {
                     EmptyView()
                 }
-                ScrollView{
+                ScrollView {
                     RoundedRectangle(cornerRadius: 24)
                         .fill(Color.red)
                         .padding()
-                        .frame(height:1000)
+                        .frame(height: 1000)
                 }
                 .navigationTitle("Developer")
                 .navigationBarItems(trailing: Button(action: {
                     self.showSettingsView = true
-                }){
+                }) {
                     Image(systemName: "ellipsis")
                         .foregroundColor(.black)
                 }

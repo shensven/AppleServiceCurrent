@@ -9,23 +9,23 @@ import SwiftUI
 
 struct BasicView: View {
     @State var showSettingsView = false
-    
+
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: SettingsView(), isActive: $showSettingsView){
+                NavigationLink(destination: SettingsView(), isActive: $showSettingsView) {
                     EmptyView()
                 }
                 ScrollView {
                     RoundedRectangle(cornerRadius: 24)
                         .fill(Color.blue)
                         .padding()
-                        .frame(height:1000)
+                        .frame(height: 1000)
                 }
                 .navigationTitle("Basic")
                 .navigationBarItems(trailing: Button(action: {
                     self.showSettingsView = true
-                }){
+                }) {
                     Image(systemName: "ellipsis")
                         .foregroundColor(.black)
                 }

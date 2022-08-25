@@ -15,11 +15,11 @@ struct AppleServiceNowApp: App {
                 BasicView()
                     .badge(2)
                     .tabItem {
-                        Label("Basic",systemImage: "command")
+                        Label("Basic", systemImage: "command")
                     }
                 DeveloperView()
                     .tabItem {
-                        Label("Developer",systemImage: "xserve")
+                        Label("Developer", systemImage: "xserve")
                     }
             }
         }
