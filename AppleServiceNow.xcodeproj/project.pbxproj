@@ -10,6 +10,9 @@
 		066A52C428B5C7C400F4C661 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A52C328B5C7C400F4C661 /* BasicView.swift */; };
 		066A52C628B5C90E00F4C661 /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A52C528B5C90E00F4C661 /* DeveloperView.swift */; };
 		066A52C828B6637400F4C661 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A52C728B6637300F4C661 /* SettingsView.swift */; };
+		066A52CD28B7686700F4C661 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 066A52CC28B7686700F4C661 /* LICENSE */; };
+		066A52CF28B7686F00F4C661 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 066A52CE28B7686F00F4C661 /* README.md */; };
+		066A52D128B76AAE00F4C661 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 066A52D028B76AAE00F4C661 /* .gitignore */; };
 		06DF267028AF8BE5006AD6F0 /* AppleServiceNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF266F28AF8BE5006AD6F0 /* AppleServiceNowApp.swift */; };
 		06DF267428AF8BE8006AD6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DF267328AF8BE8006AD6F0 /* Assets.xcassets */; };
 		06DF267728AF8BE8006AD6F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DF267628AF8BE8006AD6F0 /* Preview Assets.xcassets */; };
@@ -19,6 +22,9 @@
 		066A52C328B5C7C400F4C661 /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
 		066A52C528B5C90E00F4C661 /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
 		066A52C728B6637300F4C661 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		066A52CC28B7686700F4C661 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		066A52CE28B7686F00F4C661 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		066A52D028B76AAE00F4C661 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		06DF266C28AF8BE5006AD6F0 /* AppleServiceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleServiceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DF266F28AF8BE5006AD6F0 /* AppleServiceNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleServiceNowApp.swift; sourceTree = "<group>"; };
 		06DF267328AF8BE8006AD6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,9 +42,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066A52CB28B7683B00F4C661 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				066A52D028B76AAE00F4C661 /* .gitignore */,
+				066A52CC28B7686700F4C661 /* LICENSE */,
+				066A52CE28B7686F00F4C661 /* README.md */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
 		06DF266328AF8BE5006AD6F0 = {
 			isa = PBXGroup;
 			children = (
+				066A52CB28B7683B00F4C661 /* Misc */,
 				06DF266E28AF8BE5006AD6F0 /* AppleServiceNow */,
 				06DF266D28AF8BE5006AD6F0 /* Products */,
 			);
@@ -132,7 +149,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066A52D128B76AAE00F4C661 /* .gitignore in Resources */,
+				066A52CD28B7686700F4C661 /* LICENSE in Resources */,
 				06DF267728AF8BE8006AD6F0 /* Preview Assets.xcassets in Resources */,
+				066A52CF28B7686F00F4C661 /* README.md in Resources */,
 				06DF267428AF8BE8006AD6F0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
