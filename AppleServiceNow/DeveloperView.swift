@@ -8,29 +8,27 @@
 import SwiftUI
 
 struct DeveloperView: View {
-    @State var showSettingsView = false
+    @State var showSheet = false
 
     var body: some View {
         NavigationView {
-            VStack {
-                NavigationLink(destination: SettingsView(), isActive: $showSettingsView) {
-                    EmptyView()
-                }
-                ScrollView {
-                    RoundedRectangle(cornerRadius: 24)
-                        .fill(Color.red)
-                        .padding()
-                        .frame(height: 1000)
-                }
-                .navigationTitle("Developer")
-                .navigationBarItems(trailing: Button(action: {
-                    self.showSettingsView = true
+            ScrollView {
+                RoundedRectangle(cornerRadius: 24)
+                    .fill(Color.red)
+                    .padding()
+                    .frame(height: 1000)
+            }
+            .navigationTitle("Developer")
+            .navigationBarItems(trailing:
+                Button(action: {
+                    self.showSheet = true
                 }) {
                     Image(systemName: "ellipsis")
                         .foregroundColor(.black)
+                }.sheet(isPresented: $showSheet) {
+                    SettingsView()
                 }
-                )
-            }
+            )
         }
     }
 }
