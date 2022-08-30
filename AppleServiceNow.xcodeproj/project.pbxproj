@@ -33,7 +33,7 @@
 		066A52D528B77C0E00F4C661 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		06AFAF6828BDFC6000EF33FD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		06AFAF6B28BDFF7200EF33FD /* ServiceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStatus.swift; sourceTree = "<group>"; };
-		06DF266C28AF8BE5006AD6F0 /* AppleServiceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleServiceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06DF266C28AF8BE5006AD6F0 /* ServiceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DF266F28AF8BE5006AD6F0 /* AppleServiceNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleServiceNowApp.swift; sourceTree = "<group>"; };
 		06DF267328AF8BE8006AD6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06DF267628AF8BE8006AD6F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		06DF266D28AF8BE5006AD6F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06DF266C28AF8BE5006AD6F0 /* AppleServiceNow.app */,
+				06DF266C28AF8BE5006AD6F0 /* ServiceNow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			);
 			name = AppleServiceNow;
 			productName = AppleServiceNow;
-			productReference = 06DF266C28AF8BE5006AD6F0 /* AppleServiceNow.app */;
+			productReference = 06DF266C28AF8BE5006AD6F0 /* ServiceNow.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -374,7 +374,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shensven.AppleServiceNow;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ServiceNow;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +403,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shensven.AppleServiceNow;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ServiceNow;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
