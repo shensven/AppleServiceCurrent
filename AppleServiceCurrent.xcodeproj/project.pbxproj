@@ -7,40 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		066A52C428B5C7C400F4C661 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A52C328B5C7C400F4C661 /* BasicView.swift */; };
-		066A52C628B5C90E00F4C661 /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A52C528B5C90E00F4C661 /* DeveloperView.swift */; };
-		066A52C828B6637400F4C661 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066A52C728B6637300F4C661 /* SettingsView.swift */; };
-		066A52CD28B7686700F4C661 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 066A52CC28B7686700F4C661 /* LICENSE */; };
-		066A52CF28B7686F00F4C661 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 066A52CE28B7686F00F4C661 /* README.md */; };
-		066A52D128B76AAE00F4C661 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 066A52D028B76AAE00F4C661 /* .gitignore */; };
-		066A52D328B76B5100F4C661 /* .github in Resources */ = {isa = PBXBuildFile; fileRef = 066A52D228B76B5100F4C661 /* .github */; };
-		066A52D628B77C0E00F4C661 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 066A52D528B77C0E00F4C661 /* .swift-version */; };
-		06AFAF6928BDFC6000EF33FD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAF6828BDFC6000EF33FD /* DetailView.swift */; };
-		06AFAF6C28BDFF7200EF33FD /* ServiceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAF6B28BDFF7200EF33FD /* ServiceStatus.swift */; };
-		06DF267028AF8BE5006AD6F0 /* AppleServiceNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF266F28AF8BE5006AD6F0 /* AppleServiceNowApp.swift */; };
-		06DF267428AF8BE8006AD6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DF267328AF8BE8006AD6F0 /* Assets.xcassets */; };
-		06DF267728AF8BE8006AD6F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DF267628AF8BE8006AD6F0 /* Preview Assets.xcassets */; };
+		06AFAF9428BE093B00EF33FD /* AppleServiceCurrentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAF9328BE093B00EF33FD /* AppleServiceCurrentApp.swift */; };
+		06AFAF9828BE093D00EF33FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAF9728BE093D00EF33FD /* Assets.xcassets */; };
+		06AFAF9B28BE093D00EF33FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAF9A28BE093D00EF33FD /* Preview Assets.xcassets */; };
+		06AFAFA528BE0A1B00EF33FD /* ServiceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAFA428BE0A1B00EF33FD /* ServiceStatus.swift */; };
+		06AFAFA728BE0A4200EF33FD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAFA628BE0A4200EF33FD /* SettingsView.swift */; };
+		06AFAFA928BE0A6400EF33FD /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAFA828BE0A6400EF33FD /* BasicView.swift */; };
+		06AFAFAB28BE0A8400EF33FD /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAFAA28BE0A8400EF33FD /* DeveloperView.swift */; };
+		06AFAFAD28BE0AA800EF33FD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAFAC28BE0AA800EF33FD /* DetailView.swift */; };
+		06AFAFB128BE0B3700EF33FD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAFAF28BE0B3700EF33FD /* LICENSE */; };
+		06AFAFB228BE0B3700EF33FD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAFB028BE0B3700EF33FD /* README.md */; };
+		06AFAFB528BE0B8100EF33FD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAFB328BE0B8100EF33FD /* .gitignore */; };
+		06AFAFB628BE0B8100EF33FD /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAFB428BE0B8100EF33FD /* .swift-version */; };
+		06AFAFB828BE0B9A00EF33FD /* .github in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAFB728BE0B9A00EF33FD /* .github */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		066A52C328B5C7C400F4C661 /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
-		066A52C528B5C90E00F4C661 /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
-		066A52C728B6637300F4C661 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		066A52CC28B7686700F4C661 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		066A52CE28B7686F00F4C661 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		066A52D028B76AAE00F4C661 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		066A52D228B76B5100F4C661 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
-		066A52D528B77C0E00F4C661 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
-		06AFAF6828BDFC6000EF33FD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		06AFAF6B28BDFF7200EF33FD /* ServiceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStatus.swift; sourceTree = "<group>"; };
-		06DF266C28AF8BE5006AD6F0 /* ServiceNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		06DF266F28AF8BE5006AD6F0 /* AppleServiceNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleServiceNowApp.swift; sourceTree = "<group>"; };
-		06DF267328AF8BE8006AD6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		06DF267628AF8BE8006AD6F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06AFAF9028BE093B00EF33FD /* ServCurrent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServCurrent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06AFAF9328BE093B00EF33FD /* AppleServiceCurrentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleServiceCurrentApp.swift; sourceTree = "<group>"; };
+		06AFAF9728BE093D00EF33FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06AFAF9A28BE093D00EF33FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06AFAFA428BE0A1B00EF33FD /* ServiceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStatus.swift; sourceTree = "<group>"; };
+		06AFAFA628BE0A4200EF33FD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		06AFAFA828BE0A6400EF33FD /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
+		06AFAFAA28BE0A8400EF33FD /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
+		06AFAFAC28BE0AA800EF33FD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		06AFAFAF28BE0B3700EF33FD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		06AFAFB028BE0B3700EF33FD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		06AFAFB328BE0B8100EF33FD /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		06AFAFB428BE0B8100EF33FD /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		06AFAFB728BE0B9A00EF33FD /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06DF266928AF8BE5006AD6F0 /* Frameworks */ = {
+		06AFAF8D28BE093B00EF33FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,104 +50,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		066A52CB28B7683B00F4C661 /* Misc */ = {
+		06AFAF8728BE093B00EF33FD = {
 			isa = PBXGroup;
 			children = (
-				066A52D228B76B5100F4C661 /* .github */,
-				066A52D028B76AAE00F4C661 /* .gitignore */,
-				066A52D528B77C0E00F4C661 /* .swift-version */,
-				066A52CC28B7686700F4C661 /* LICENSE */,
-				066A52CE28B7686F00F4C661 /* README.md */,
-			);
-			name = Misc;
-			sourceTree = "<group>";
-		};
-		06AFAF6A28BDFF4100EF33FD /* Struct */ = {
-			isa = PBXGroup;
-			children = (
-				06AFAF6B28BDFF7200EF33FD /* ServiceStatus.swift */,
-			);
-			path = Struct;
-			sourceTree = "<group>";
-		};
-		06DF266328AF8BE5006AD6F0 = {
-			isa = PBXGroup;
-			children = (
-				066A52CB28B7683B00F4C661 /* Misc */,
-				06DF266E28AF8BE5006AD6F0 /* AppleServiceNow */,
-				06DF266D28AF8BE5006AD6F0 /* Products */,
+				06AFAFAE28BE0B0100EF33FD /* MISC */,
+				06AFAF9228BE093B00EF33FD /* AppleServiceCurrent */,
+				06AFAF9128BE093B00EF33FD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		06DF266D28AF8BE5006AD6F0 /* Products */ = {
+		06AFAF9128BE093B00EF33FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06DF266C28AF8BE5006AD6F0 /* ServiceNow.app */,
+				06AFAF9028BE093B00EF33FD /* ServCurrent.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		06DF266E28AF8BE5006AD6F0 /* AppleServiceNow */ = {
+		06AFAF9228BE093B00EF33FD /* AppleServiceCurrent */ = {
 			isa = PBXGroup;
 			children = (
-				06AFAF6A28BDFF4100EF33FD /* Struct */,
-				06DF266F28AF8BE5006AD6F0 /* AppleServiceNowApp.swift */,
-				066A52C728B6637300F4C661 /* SettingsView.swift */,
-				066A52C328B5C7C400F4C661 /* BasicView.swift */,
-				066A52C528B5C90E00F4C661 /* DeveloperView.swift */,
-				06AFAF6828BDFC6000EF33FD /* DetailView.swift */,
-				06DF267328AF8BE8006AD6F0 /* Assets.xcassets */,
-				06DF267528AF8BE8006AD6F0 /* Preview Content */,
+				06AFAFA128BE09E800EF33FD /* Struct */,
+				06AFAF9328BE093B00EF33FD /* AppleServiceCurrentApp.swift */,
+				06AFAFA628BE0A4200EF33FD /* SettingsView.swift */,
+				06AFAFA828BE0A6400EF33FD /* BasicView.swift */,
+				06AFAFAA28BE0A8400EF33FD /* DeveloperView.swift */,
+				06AFAFAC28BE0AA800EF33FD /* DetailView.swift */,
+				06AFAF9728BE093D00EF33FD /* Assets.xcassets */,
+				06AFAF9928BE093D00EF33FD /* Preview Content */,
 			);
-			path = AppleServiceNow;
+			path = AppleServiceCurrent;
 			sourceTree = "<group>";
 		};
-		06DF267528AF8BE8006AD6F0 /* Preview Content */ = {
+		06AFAF9928BE093D00EF33FD /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				06DF267628AF8BE8006AD6F0 /* Preview Assets.xcassets */,
+				06AFAF9A28BE093D00EF33FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06AFAFA128BE09E800EF33FD /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				06AFAFA428BE0A1B00EF33FD /* ServiceStatus.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		06AFAFAE28BE0B0100EF33FD /* MISC */ = {
+			isa = PBXGroup;
+			children = (
+				06AFAFB728BE0B9A00EF33FD /* .github */,
+				06AFAFB328BE0B8100EF33FD /* .gitignore */,
+				06AFAFB428BE0B8100EF33FD /* .swift-version */,
+				06AFAFAF28BE0B3700EF33FD /* LICENSE */,
+				06AFAFB028BE0B3700EF33FD /* README.md */,
+			);
+			name = MISC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		06DF266B28AF8BE5006AD6F0 /* AppleServiceNow */ = {
+		06AFAF8F28BE093B00EF33FD /* AppleServiceCurrent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06DF267A28AF8BE8006AD6F0 /* Build configuration list for PBXNativeTarget "AppleServiceNow" */;
+			buildConfigurationList = 06AFAF9E28BE093D00EF33FD /* Build configuration list for PBXNativeTarget "AppleServiceCurrent" */;
 			buildPhases = (
-				066A52D428B771DD00F4C661 /* Run SwiftFormat */,
-				066A52C928B7640B00F4C661 /* Run SwiftLint */,
-				06DF266828AF8BE5006AD6F0 /* Sources */,
-				06DF266928AF8BE5006AD6F0 /* Frameworks */,
-				06DF266A28AF8BE5006AD6F0 /* Resources */,
+				06AFAFB928BE0BCE00EF33FD /* Run SwiftFormat */,
+				06AFAFBA28BE0BE700EF33FD /* Run SwiftLint */,
+				06AFAF8C28BE093B00EF33FD /* Sources */,
+				06AFAF8D28BE093B00EF33FD /* Frameworks */,
+				06AFAF8E28BE093B00EF33FD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AppleServiceNow;
-			productName = AppleServiceNow;
-			productReference = 06DF266C28AF8BE5006AD6F0 /* ServiceNow.app */;
+			name = AppleServiceCurrent;
+			productName = AppleServiceCurrent;
+			productReference = 06AFAF9028BE093B00EF33FD /* ServCurrent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		06DF266428AF8BE5006AD6F0 /* Project object */ = {
+		06AFAF8828BE093B00EF33FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					06DF266B28AF8BE5006AD6F0 = {
+					06AFAF8F28BE093B00EF33FD = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 06DF266728AF8BE5006AD6F0 /* Build configuration list for PBXProject "AppleServiceNow" */;
+			buildConfigurationList = 06AFAF8B28BE093B00EF33FD /* Build configuration list for PBXProject "AppleServiceCurrent" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -155,53 +155,35 @@
 				en,
 				Base,
 			);
-			mainGroup = 06DF266328AF8BE5006AD6F0;
-			productRefGroup = 06DF266D28AF8BE5006AD6F0 /* Products */;
+			mainGroup = 06AFAF8728BE093B00EF33FD;
+			productRefGroup = 06AFAF9128BE093B00EF33FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06DF266B28AF8BE5006AD6F0 /* AppleServiceNow */,
+				06AFAF8F28BE093B00EF33FD /* AppleServiceCurrent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		06DF266A28AF8BE5006AD6F0 /* Resources */ = {
+		06AFAF8E28BE093B00EF33FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				066A52D328B76B5100F4C661 /* .github in Resources */,
-				066A52D128B76AAE00F4C661 /* .gitignore in Resources */,
-				066A52CD28B7686700F4C661 /* LICENSE in Resources */,
-				06DF267728AF8BE8006AD6F0 /* Preview Assets.xcassets in Resources */,
-				066A52CF28B7686F00F4C661 /* README.md in Resources */,
-				06DF267428AF8BE8006AD6F0 /* Assets.xcassets in Resources */,
-				066A52D628B77C0E00F4C661 /* .swift-version in Resources */,
+				06AFAFB528BE0B8100EF33FD /* .gitignore in Resources */,
+				06AFAFB128BE0B3700EF33FD /* LICENSE in Resources */,
+				06AFAF9B28BE093D00EF33FD /* Preview Assets.xcassets in Resources */,
+				06AFAFB828BE0B9A00EF33FD /* .github in Resources */,
+				06AFAFB228BE0B3700EF33FD /* README.md in Resources */,
+				06AFAFB628BE0B8100EF33FD /* .swift-version in Resources */,
+				06AFAF9828BE093D00EF33FD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		066A52C928B7640B00F4C661 /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		066A52D428B771DD00F4C661 /* Run SwiftFormat */ = {
+		06AFAFB928BE0BCE00EF33FD /* Run SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,26 +201,44 @@
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
+		06AFAFBA28BE0BE700EF33FD /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06DF266828AF8BE5006AD6F0 /* Sources */ = {
+		06AFAF8C28BE093B00EF33FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				066A52C428B5C7C400F4C661 /* BasicView.swift in Sources */,
-				066A52C828B6637400F4C661 /* SettingsView.swift in Sources */,
-				06DF267028AF8BE5006AD6F0 /* AppleServiceNowApp.swift in Sources */,
-				06AFAF6C28BDFF7200EF33FD /* ServiceStatus.swift in Sources */,
-				06AFAF6928BDFC6000EF33FD /* DetailView.swift in Sources */,
-				066A52C628B5C90E00F4C661 /* DeveloperView.swift in Sources */,
+				06AFAFA528BE0A1B00EF33FD /* ServiceStatus.swift in Sources */,
+				06AFAFA728BE0A4200EF33FD /* SettingsView.swift in Sources */,
+				06AFAFA928BE0A6400EF33FD /* BasicView.swift in Sources */,
+				06AFAFAD28BE0AA800EF33FD /* DetailView.swift in Sources */,
+				06AFAFAB28BE0A8400EF33FD /* DeveloperView.swift in Sources */,
+				06AFAF9428BE093B00EF33FD /* AppleServiceCurrentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		06DF267828AF8BE8006AD6F0 /* Debug */ = {
+		06AFAF9C28BE093D00EF33FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		06DF267928AF8BE8006AD6F0 /* Release */ = {
+		06AFAF9D28BE093D00EF33FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -352,14 +352,14 @@
 			};
 			name = Release;
 		};
-		06DF267B28AF8BE8006AD6F0 /* Debug */ = {
+		06AFAF9F28BE093D00EF33FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleServiceNow/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleServiceCurrent/Preview Content\"";
 				DEVELOPMENT_TEAM = 6S52LG3NA5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -373,22 +373,22 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shensven.AppleServiceNow;
-				PRODUCT_NAME = ServiceNow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shensven.AppleServiceCurrent;
+				PRODUCT_NAME = ServCurrent;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		06DF267C28AF8BE8006AD6F0 /* Release */ = {
+		06AFAFA028BE093D00EF33FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppleServiceNow/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppleServiceCurrent/Preview Content\"";
 				DEVELOPMENT_TEAM = 6S52LG3NA5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -402,8 +402,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shensven.AppleServiceNow;
-				PRODUCT_NAME = ServiceNow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shensven.AppleServiceCurrent;
+				PRODUCT_NAME = ServCurrent;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -413,25 +413,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06DF266728AF8BE5006AD6F0 /* Build configuration list for PBXProject "AppleServiceNow" */ = {
+		06AFAF8B28BE093B00EF33FD /* Build configuration list for PBXProject "AppleServiceCurrent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06DF267828AF8BE8006AD6F0 /* Debug */,
-				06DF267928AF8BE8006AD6F0 /* Release */,
+				06AFAF9C28BE093D00EF33FD /* Debug */,
+				06AFAF9D28BE093D00EF33FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06DF267A28AF8BE8006AD6F0 /* Build configuration list for PBXNativeTarget "AppleServiceNow" */ = {
+		06AFAF9E28BE093D00EF33FD /* Build configuration list for PBXNativeTarget "AppleServiceCurrent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06DF267B28AF8BE8006AD6F0 /* Debug */,
-				06DF267C28AF8BE8006AD6F0 /* Release */,
+				06AFAF9F28BE093D00EF33FD /* Debug */,
+				06AFAFA028BE093D00EF33FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 06DF266428AF8BE5006AD6F0 /* Project object */;
+	rootObject = 06AFAF8828BE093B00EF33FD /* Project object */;
 }

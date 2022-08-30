@@ -1,6 +1,6 @@
 //
 //  DetailView.swift
-//  AppleServiceNow
+//  AppleServiceCurrent
 //
 //  Created by SvenFE on 2022/8/30.
 //

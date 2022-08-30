@@ -1,14 +1,14 @@
 //
-//  AppleServiceNowApp.swift
-//  AppleServiceNow
+//  AppleServiceCurrentApp.swift
+//  AppleServiceCurrent
 //
-//  Created by SvenFE on 2022/8/19.
+//  Created by SvenFE on 2022/8/30.
 //
 
 import SwiftUI
 
 @main
-struct AppleServiceNowApp: App {
+struct AppleServiceCurrentApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
