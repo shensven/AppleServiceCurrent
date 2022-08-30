@@ -7,16 +7,43 @@
 
 import SwiftUI
 
+var devService = [
+    ServiceStatus(name: "Account"),
+    ServiceStatus(name: "APNS"),
+    ServiceStatus(name: "APNS Sandbox"),
+    ServiceStatus(name: "App Attest"),
+    ServiceStatus(name: "App Store - In-App Purchases"),
+    ServiceStatus(name: "App Store - Receipt Verification"),
+    ServiceStatus(name: "App Store - Sandbox"),
+    ServiceStatus(name: "App Store - Server APIs"),
+    ServiceStatus(name: "App Store - Server Notifications"),
+    ServiceStatus(name: "App Store - TestFlight"),
+    ServiceStatus(name: "App Store Automatic App Updates"),
+    ServiceStatus(name: "App Store Connect"),
+    ServiceStatus(name: "App Store Connect - App Processing"),
+    ServiceStatus(name: "App Store Connect - App Upload"),
+    ServiceStatus(name: "App Store Connect Analytics"),
+    ServiceStatus(name: "App Store Connect API"),
+    ServiceStatus(name: "Apple Developer Forums"),
+    ServiceStatus(name: "Apple Maps API"),
+]
+
 struct DeveloperView: View {
     @State var showSheet = false
 
     var body: some View {
         NavigationView {
-            ScrollView {
-                RoundedRectangle(cornerRadius: 24)
-                    .fill(Color.red)
-                    .padding()
-                    .frame(height: 1000)
+            List(devService) { item in
+                NavigationLink(destination: DetailView()) {
+                    HStack {
+                        Circle()
+                            .fill(Color.green)
+                            .frame(width: 14, height: 14)
+                        Text(item.name)
+                            .lineLimit(1)
+                            .font(.system(size: 15))
+                    }
+                }
             }
             .navigationTitle("Developer")
             .navigationBarItems(trailing:
