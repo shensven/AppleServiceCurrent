@@ -1,0 +1,76 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.ref }}
+
+jobs:
+  publish_ios:
+    name: Publish iOS
+    if: ${{ github.repository_owner == 'shensven' }}
+
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout git repository
+        uses: actions/checkout@v3
+
+      - name: Restore profile
+        env:
+          P12_CERTIFICATE_BASE64: ${{ secrets.P12_CERTIFICATE_BASE64 }}
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+          KEYCHAIN_PASSWORD: ${{ secrets.P12_PASSWORD }}
+          PROVISIONING_PROFILE_BASE64: ${{ secrets.PROVISIONING_PROFILE_BASE64 }}
+        run: |
+          P12_CERTIFICATE_PATH=${{ runner.temp }}/certificate.p12
+          PROVISIONING_PROFILE_PATH=${{ runner.temp }}/pp.mobileprovision
+          KEYCHAIN_PATH=${{ runner.temp }}/app_signing.keychain-db
+          echo -n "$P12_CERTIFICATE_BASE64" | base64 --decode --output $P12_CERTIFICATE_PATH
+          echo -n "$PROVISIONING_PROFILE_BASE64" | base64 --decode --output $PROVISIONING_PROFILE_PATH
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp $PROVISIONING_PROFILE_PATH ~/Library/MobileDevice/Provisioning\ Profiles/pp.mobileprovision
+          security create-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security set-keychain-settings -lut 3600 $KEYCHAIN_PATH
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security import $P12_CERTIFICATE_PATH -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
+          security list-keychain -d user -s $KEYCHAIN_PATH
+
+      - name: Release for App Store & Upload to TestFlight
+        run: |
+          xcrun agvtool new-version -all ${{ github.run_number }}
+          xcodebuild archive \
+            -project AppleServiceCurrent.xcodeproj \
+            -scheme AppleServiceCurrent \
+            -configuration Release \
+            -archivePath ${{ runner.temp }}/AppleServiceCurrent.xcarchive \
+            -allowProvisioningUpdates \
+            -quiet \
+            PROVISIONING_PROFILE_SPECIFIER="AppleServiceCurrent Distribution" \
+            CODE_SIGN_STYLE="Manual" \
+            CODE_SIGN_IDENTITY="iPhone Distribution"
+          xcodebuild  -exportArchive \
+            -archivePath ${{ runner.temp }}/AppleServiceCurrent.xcarchive \
+            -exportPath ${{ runner.temp }} \
+            -exportOptionsPlist AppleServiceCurrent/ExportOptions.plist \
+            -allowProvisioningUpdates \
+            -quiet \
+            | xcpretty
+          ls ${{ runner.temp }}
+          xcrun altool --upload-app \
+            --type ios \
+            --file "${{ runner.temp }}/ServCurrent.ipa" \
+            --username "${{ secrets.APPLE_ID }}" \
+            --password "${{ secrets.APPLE_ID_PASS }}" \
+
+      - name: Backup .ipa to GitHub
+        uses: ncipollo/release-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          name: App Store Backup
+          tag: app-store-backup
+          allowUpdates: true
+          draft: true
+          artifacts: "${{ runner.temp }}/*.ipa"
