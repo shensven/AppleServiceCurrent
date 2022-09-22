@@ -17,6 +17,7 @@ struct AppleServiceCurrentApp: App {
                     .tabItem {
                         Label("Basic", systemImage: "command")
                     }
+
                 DeveloperView()
                     .tabItem {
                         Label("Developer", systemImage: "xserve")
