@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		062B081C28C093C5003BCDB6 /* SystemStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062B081B28C093C5003BCDB6 /* SystemStatus.swift */; };
 		066134EE28DC8817000C01B7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 066134ED28DC8817000C01B7 /* Alamofire */; };
+		066134F428DC94B1000C01B7 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 066134F328DC94B1000C01B7 /* SwiftyJSON */; };
 		06AFAF9428BE093B00EF33FD /* AppleServiceCurrentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAF9328BE093B00EF33FD /* AppleServiceCurrentApp.swift */; };
 		06AFAF9828BE093D00EF33FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAF9728BE093D00EF33FD /* Assets.xcassets */; };
 		06AFAF9B28BE093D00EF33FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAF9A28BE093D00EF33FD /* Preview Assets.xcassets */; };
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066134F428DC94B1000C01B7 /* SwiftyJSON in Frameworks */,
 				066134EE28DC8817000C01B7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +137,7 @@
 			name = AppleServiceCurrent;
 			packageProductDependencies = (
 				066134ED28DC8817000C01B7 /* Alamofire */,
+				066134F328DC94B1000C01B7 /* SwiftyJSON */,
 			);
 			productName = AppleServiceCurrent;
 			productReference = 06AFAF9028BE093B00EF33FD /* ServCurrent.app */;
@@ -166,6 +169,7 @@
 			mainGroup = 06AFAF8728BE093B00EF33FD;
 			packageReferences = (
 				066134EC28DC8817000C01B7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				066134F228DC94B1000C01B7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 06AFAF9128BE093B00EF33FD /* Products */;
 			projectDirPath = "";
@@ -456,6 +460,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		066134F228DC94B1000C01B7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -463,6 +475,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 066134EC28DC8817000C01B7 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		066134F328DC94B1000C01B7 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 066134F228DC94B1000C01B7 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

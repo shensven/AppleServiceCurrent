@@ -5,31 +5,49 @@
 //  Created by SvenFE on 2022/8/30.
 //
 
+import Alamofire
 import SwiftUI
-
-var devService = [
-    ServiceName(name: "Account"),
-    ServiceName(name: "APNS"),
-    ServiceName(name: "APNS Sandbox"),
-    ServiceName(name: "App Attest"),
-    ServiceName(name: "App Store - In-App Purchases"),
-    ServiceName(name: "App Store - Receipt Verification"),
-    ServiceName(name: "App Store - Sandbox"),
-    ServiceName(name: "App Store - Server APIs"),
-    ServiceName(name: "App Store - Server Notifications"),
-    ServiceName(name: "App Store - TestFlight"),
-    ServiceName(name: "App Store Automatic App Updates"),
-    ServiceName(name: "App Store Connect"),
-    ServiceName(name: "App Store Connect - App Processing"),
-    ServiceName(name: "App Store Connect - App Upload"),
-    ServiceName(name: "App Store Connect Analytics"),
-    ServiceName(name: "App Store Connect API"),
-    ServiceName(name: "Apple Developer Forums"),
-    ServiceName(name: "Apple Maps API"),
-]
+import SwiftyJSON
 
 struct DeveloperView: View {
     @State var showSheet = false
+
+    @State var devService: [SystemStatus.Services] = []
+
+    private func fetchStatus() {
+        let request = AF.request("https://www.apple.com/support/systemstatus/data/developer/system_status_en_US.js")
+
+        request.responseString { response in
+            switch response.result {
+            case let .success(value):
+                var trimmedJsonString: String = value.substring(
+                    from: "jsonCallback(".endIndex
+                )
+                trimmedJsonString = trimmedJsonString.substring(
+                    to: trimmedJsonString.index(
+                        trimmedJsonString.endIndex,
+                        offsetBy: -2
+                    )
+                )
+                let trimmedJsonStringData: Data = trimmedJsonString.data(using: .utf8)!
+                let json = JSON(trimmedJsonStringData)
+
+                let services = json["services"].arrayValue
+
+                self.devService = services.map {
+                    SystemStatus.Services(
+                        id: UUID(),
+                        redirectUrl: $0["redirectUrl"].stringValue,
+                        serviceName: $0["serviceName"].stringValue,
+                        events: $0["events"].arrayValue.map(\.stringValue)
+                    )
+                }
+
+            case let .failure(error):
+                print(error)
+            }
+        }
+    }
 
     var body: some View {
         NavigationView {
@@ -39,7 +57,7 @@ struct DeveloperView: View {
                         Circle()
                             .fill(Color.green)
                             .frame(width: 14, height: 14)
-                        Text(item.name)
+                        Text(item.serviceName)
                             .lineLimit(1)
                             .font(.system(size: 15))
                     }
@@ -55,7 +73,9 @@ struct DeveloperView: View {
                 }.sheet(isPresented: $showSheet) {
                     SettingsView()
                 }
-            )
+            ).onAppear {
+                fetchStatus()
+            }
         }
     }
 }
