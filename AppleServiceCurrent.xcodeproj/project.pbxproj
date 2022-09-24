@@ -13,7 +13,6 @@
 		06AFAF9428BE093B00EF33FD /* AppleServiceCurrentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAF9328BE093B00EF33FD /* AppleServiceCurrentApp.swift */; };
 		06AFAF9828BE093D00EF33FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAF9728BE093D00EF33FD /* Assets.xcassets */; };
 		06AFAF9B28BE093D00EF33FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AFAF9A28BE093D00EF33FD /* Preview Assets.xcassets */; };
-		06AFAFA528BE0A1B00EF33FD /* ServiceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAFA428BE0A1B00EF33FD /* ServiceName.swift */; };
 		06AFAFA728BE0A4200EF33FD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAFA628BE0A4200EF33FD /* SettingsView.swift */; };
 		06AFAFA928BE0A6400EF33FD /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAFA828BE0A6400EF33FD /* BasicView.swift */; };
 		06AFAFAB28BE0A8400EF33FD /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AFAFAA28BE0A8400EF33FD /* DeveloperView.swift */; };
@@ -31,7 +30,6 @@
 		06AFAF9328BE093B00EF33FD /* AppleServiceCurrentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleServiceCurrentApp.swift; sourceTree = "<group>"; };
 		06AFAF9728BE093D00EF33FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06AFAF9A28BE093D00EF33FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		06AFAFA428BE0A1B00EF33FD /* ServiceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceName.swift; sourceTree = "<group>"; };
 		06AFAFA628BE0A4200EF33FD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		06AFAFA828BE0A6400EF33FD /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
 		06AFAFAA28BE0A8400EF33FD /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 		06AFAFA128BE09E800EF33FD /* Struct */ = {
 			isa = PBXGroup;
 			children = (
-				06AFAFA428BE0A1B00EF33FD /* ServiceName.swift */,
 				062B081B28C093C5003BCDB6 /* SystemStatus.swift */,
 			);
 			path = Struct;
@@ -241,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06AFAFA528BE0A1B00EF33FD /* ServiceName.swift in Sources */,
 				06AFAFA728BE0A4200EF33FD /* SettingsView.swift in Sources */,
 				06AFAFA928BE0A6400EF33FD /* BasicView.swift in Sources */,
 				062B081C28C093C5003BCDB6 /* SystemStatus.swift in Sources */,

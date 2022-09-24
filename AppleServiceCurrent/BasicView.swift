@@ -11,7 +11,6 @@ import SwiftyJSON
 
 struct BasicView: View {
     @State var showSheet = false
-
     @State var basicService: [SystemStatus.Services] = []
 
     private func fetchStatus() {
@@ -27,7 +26,21 @@ struct BasicView: View {
                         id: UUID(),
                         redirectUrl: $0["redirectUrl"].stringValue,
                         serviceName: $0["serviceName"].stringValue,
-                        events: $0["events"].arrayValue.map(\.stringValue)
+                        events: $0["events"].arrayValue.map {
+                            SystemStatus.Services.Event(
+                                id: UUID(),
+                                usersAffected: $0["usersAffected"].stringValue,
+                                epochStartDate: $0["epochStartDate"].intValue,
+                                epochEndDate: $0["epochEndDate"].intValue,
+                                messageId: $0["messageId"].stringValue,
+                                statusType: $0["statusType"].stringValue,
+                                datePosted: $0["datePosted"].stringValue,
+                                startDate: $0["startDate"].stringValue,
+                                endDate: $0["endDate"].stringValue,
+                                eventStatus: $0["eventStatus"].stringValue,
+                                message: $0["message"].stringValue
+                            )
+                        }
                     )
                 }
             case let .failure(error):
@@ -39,7 +52,7 @@ struct BasicView: View {
     var body: some View {
         NavigationView {
             List(basicService) { item in
-                NavigationLink(destination: DetailView()) {
+                ZStack {
                     HStack {
                         Circle()
                             .fill(Color.green)
@@ -47,6 +60,18 @@ struct BasicView: View {
                         Text(item.serviceName)
                             .lineLimit(1)
                             .font(.system(size: 15))
+
+                        Spacer()
+                        if item.events.count != 0 {
+                            Text("\(item.events.count)")
+                                .lineLimit(1)
+                                .font(.system(size: 12))
+                                .foregroundColor(.gray)
+                                .padding(.trailing, 16)
+                        }
+                    }
+                    if item.events.count != 0 {
+                        NavigationLink(destination: DetailView()) {}
                     }
                 }
             }
