@@ -12,7 +12,7 @@ jobs:
     name: Publish iOS
     if: ${{ github.repository_owner == 'shensven' }}
 
-    runs-on: macos-latest
+    runs-on: macos-12
 
     steps:
       - name: Checkout git repository
@@ -39,6 +39,8 @@ jobs:
           security list-keychain -d user -s $KEYCHAIN_PATH
 
       - name: Release for App Store & Upload to TestFlight
+        # env:
+        #   DEVELOPER_DIR: /Applications/Xcode_14.0.1.app/Contents/Developer
         run: |
           xcrun agvtool new-version -all ${{ github.run_number }}
           xcodebuild archive \
